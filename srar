@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    char symbol;
+    int i, j, side;
+
+    printf("Enter the symbol for the square: ");
+    scanf(" %c", &symbol);
+
+    printf("Enter the side of the square: ");
+    scanf("%d", &side);
+
+    for(i = 0; i < side; i++) {
+        for(j = 0; j < side; j++) {
+            printf("%c", symbol);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
